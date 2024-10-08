@@ -1,15 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Avatar from './components/Avatar';
 import './App.css';
-import Menu from './components/Menu';
-
+import image from './image.jpg'
 
 
 export default function App() {
   return (
-    <div>
-      <Menu buttontext="clickHere" items={["hello","namasthe"]}/>
-    </div>
+    <>
+      <Avatar  src ={image} alt="Bob Ziroll" />
+      <br />
+      <Avatar>BZ</Avatar>
+      <br />
+      <Avatar />
+    </>
   )
 }
 
